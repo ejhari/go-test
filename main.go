@@ -1,9 +1,12 @@
 package main
 
 import (
-  "fmt"
+	"fmt"
+
+	"github.com/mitchellh/colorstring"
 )
 
 func main() {
-  fmt.Printf("Hello world!\n")
+	msg := colorstring.Color("[green]Hello [red]World!\n")
+	fmt.Printf(msg)
 }
