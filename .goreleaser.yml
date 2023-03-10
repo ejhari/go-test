@@ -14,7 +14,7 @@ builds:
   flags:
     - -trimpath
   ldflags:
-    - '-s -w -X server.Version={{.Version}} -X server.ShortCommit={{.ShortCommit}}'
+    - '-s -w -X gitub.com/ejhari/go-test/server.Version={{.Version}} -X gitub.com/ejhari/go-test/server.ShortCommit={{.ShortCommit}}'
   goos:
     # - freebsd
     - windows
