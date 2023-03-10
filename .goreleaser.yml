@@ -14,7 +14,7 @@ builds:
   flags:
     - -trimpath
   ldflags:
-    - '-s -w -X main.version={{.Version}} -X main.commit={{.ShortCommit}}'
+    - '-s -w -X main.Version={{.Version}} -X main.ShortCommit={{.ShortCommit}}'
   goos:
     # - freebsd
     - windows
@@ -25,9 +25,9 @@ builds:
     # - '386'
     # - arm
     - arm64
-  ignore:
-    - goos: darwin
-      goarch: '386'
+  # ignore:
+  #   - goos: darwin
+  #     goarch: '386'
   binary: '{{ .ProjectName }}_v{{ .Version }}'
 archives:
 - format: zip

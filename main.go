@@ -11,8 +11,8 @@ var Version string
 var ShortCommit string
 
 func main() {
-	fmt.Printf("%s\n", Version)
-	fmt.Printf("%s\n", ShortCommit)
+	fmt.Printf("Version: %s\n", Version)
+	fmt.Printf("ShortCommit: %s\n", ShortCommit)
 
 	msg := colorstring.Color("[green]Hello [red]World!\n")
 	fmt.Printf("%s\n", msg)
