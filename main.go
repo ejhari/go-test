@@ -4,6 +4,8 @@ import (
 	"fmt"
 
 	"github.com/mitchellh/colorstring"
+
+	_ "gitub.com/ejhari/go-test/server"
 )
 
 func main() {
