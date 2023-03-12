@@ -14,4 +14,7 @@ func main() {
 
 	msg = colorstring.Color("[blue]Hello [yellow]World!\n")
 	fmt.Printf("%s\n", msg)
+
+	msg = colorstring.Color("[purple]Hello [cyan]World!\n")
+	fmt.Printf("%s\n", msg)
 }
